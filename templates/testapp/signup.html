@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>LoginPage</title>
+        <link rel="stylesheet" type="text/css" href="{%static 'css/signup.css' %}" />
+    </head>
+    <body>
+        <div class="message1">
+            {% for message in messages %}
+            <h5>{{message}}</h5>
+            {% endfor %}
+        </div>
+        <form action="signup" method="post">
+        {% csrf_token %}
+        <div class="container">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <h1>CJITS</h1><br><br>
+                        <h2>Signup</h2>
+                        <form>
+                            <input type="email" class="input-box" id="email" name="email" placeholder="Enter your email id" required><br>
+                            <input type="hallticket" class="input-box" id="hno" name="hno" placeholder="Enter your hallticket number" required><br>
+                            <input type="password" class="input-box" id="pass1" name="pass1" placeholder="Enter your password" required><br>
+                            <input type="password" class="input-box" id="pass2" name="pass2" placeholder="Confirm password" required><br>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    <button type="button" class="btn" >
+                        <a href="/login"><h4>I've an account</h4>
+                        </a>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

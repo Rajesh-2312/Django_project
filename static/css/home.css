@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:'Courier New', Courier, monospace;
+   
+
+}
+#nav-bar
+{
+    position:relative;
+    top: 0;
+    z-index: 10;
+
+}
+.navbar
+{
+    background-image: linear-gradient(to right,#a517ba,#5f1782);
+    padding: 0 !important;
+
+}
+.btn-primary{
+    position: sticky;
+    top: 10px;
+    right: 20px;
+    color: aliceblue;
+    width: 75px;
+    height: 40px;
+
+}
+.btn-primary h6{
+    color: #fcebff;
+    font-size: small;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav  li a 
+{
+    color: rgba(255, 255, 255, 0.946) !important;
+    font-weight: 600;
+    float: right;
+    text-align: right;
+
+}
+.fa-bars
+{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+
+/*-----------------------banner section-----------------*/
+#banner{
+    background-image: linear-gradient(to right,#a517ba,#5f1782);
+    color: #fff ;
+    padding-top: 2%;
+    
+}
+.promo-title
+{
+    color: rgb(7, 238, 255);
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 90px;
+    color: linear-gradient(to right,#fcebff,#2f2730);
+}
+.lead{
+    color: rgb(34, 236, 41);
+}
+.bottom-img
+{
+    width: 100%;
+}
+.nav-item{
+    text-align: right;
+}
+
+
+.btn-primary:hover
+{
+    background-color: rgb(177, 8, 171);
+    text-decoration:#020202;
+
+}
+.image
+{
+    top: 10px;
+    right: 800px;
+}
+.logo{
+    border-radius: 50%;
+}
+img{
+    position: 80%;
+    margin-top: 15px;
+    top:10px;
+    left:10px;
+    border-radius: 50%;
+
+}
+
+/* title of what we do*/
+.title::before
+{
+    content: '';
+    background: #7b1798;
+    height: 5px;
+    width: 200px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+/*  styling future boxes and section  */
+
+.banner{
+    background-color: #fff;
+    height: 50vh;
+    padding: 0 100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.boxes{
+    padding: 10px 10px;
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+.boxes:hover{
+    box-shadow: 0px 5px 10px #44454c;
+    
+}
+#about-us  
+{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+.about-us :hover{
+    box-shadow: 0px 5px 10px #222329;
+}
+.about-title
+{
+    font-size: 50px;
+    font-weight: 650;
+    margin-top: 8%;
+    text-align: center;
+}
+#about-title
+{
+    margin: 10px 0;
+}
+.about-title:hover{
+    box-shadow: 0px 5px 10px #222329;
+
+}
